@@ -1,0 +1,194 @@
+{
+  "topic": "두통",
+  "diseases": [
+    {
+      "diagnosis_name": "편두통 (Migraine)",
+      "fact_sheet": {
+        "KQ_Demographics_Age": "주로 청소년기부터 시작하여 발생",
+        "KQ_Onset_When": "이번 통증은 어제 시작 (예시), 주기적으로 발생함",
+        "KQ_Onset_SuddenVsGradual": "전조 증상 동반 시 점진적으로 시작될 수 있음",
+        "KQ_Onset_Circumstance": "활동에 의해 악화될 수 있음",
+        "KQ_Location_Area": "주로 한쪽 머리 (Unilateral), 양측성인 경우도 있음 (60% Unilateral)",
+        "KQ_Duration_Length": "4시간에서 72시간 지속",
+        "KQ_Duration_Periodicity": "주기적으로 반복 발생",
+        "KQ_Experience_Previous": "이전에 유사한 두통을 경험한 적이 많음",
+        "KQ_Character_Description": "욱신거리는 (Pulsating) 통증",
+        "KQ_Character_Severity": "중등도에서 심한 정도 (Moderate to severe)",
+        "KQ_Character_ImpactOnLife": "두통 때문에 일상생활에 지장이 있음",
+        "KQ_AssociatedSx_Aura": "시각 증상(아우라) 등 전조 증상이 동반될 수 있음",
+        "KQ_Factor_Aggravating": "활동 시 악화됨, 빛과 소리에 민감해짐 (Photophobia, Phonophobia)",
+        "KQ_Factor_Alleviating": "휴식, 수면 시 호전됨",
+        "KQ_PastHistory_Diagnoses": "가족 중에도 편두통을 앓는 사람이 있음",
+        "KQ_SocialHistory_OccupationStress": "스트레스가 두통을 유발하거나 악화시킬 수 있음",
+        "KQ_FamilyHistory_Headache": "편두통 가족력이 있음",
+        "KQ_GynecologicalHistory_MenstrualCycle": "월경 주기에 따라 두통 발생 양상이 달라질 수 있음",
+        "PE_HeadNeck_InspectionPalpation": "정상 소견",
+        "PE_Funduscopy": "정상 소견 (유두부종 없음)"
+      },
+      "diagnostic_plan": [
+        "뇌 MRI (비전형적인 경우, Red flag 동반 시)",
+        "안저 검사 (유두부종 배제)"
+      ]
+    },
+    {
+      "diagnosis_name": "긴장성 두통 (Tension Headache)",
+      "fact_sheet": {
+        "KQ_Location_Area": "양측성으로 머리 전체에 발생 (Bilateral)",
+        "KQ_Duration_Length": "수분에서 수일 (30분~7일) 지속",
+        "KQ_Character_Description": "누르는 듯한, 압박감 있는 통증 (Pressing)",
+        "KQ_Character_Severity": "경증에서 중등도 (Mild to moderate)",
+        "KQ_Character_ImpactOnLife": "일상생활에 큰 지장은 없음",
+        "KQ_AssociatedSx_Aura": "전조 증상 없음",
+        "KQ_Factor_Aggravating": "저녁에 특히 심해지는 경향이 있음, 목/어깨 근육 긴장",
+        "KQ_Factor_Alleviating": "진통제, 이완요법, 마사지, 수면 시 호전",
+        "PE_HeadNeck_InspectionPalpation": "정상 소견",
+        "PE_Neck_MeningealSigns": "없음"
+      },
+      "diagnostic_plan": [
+        "기본 검사 (다른 질환 감별을 위해 필요 시 시행)"
+      ]
+    },
+    {
+      "diagnosis_name": "군발 두통 (Cluster Headache)",
+      "fact_sheet": {
+        "KQ_Demographics_Age": "환자의 90%가 남자이며, 20~40대에 호발",
+        "KQ_Onset_When": "갑작스럽게 시작, 주기적으로 발생",
+        "KQ_Onset_Circumstance": "낮/밤 특정 시간이나 1년 중 특정 계절에 나타나는 경향이 있음",
+        "KQ_Location_Area": "주로 한쪽 눈 뒤 또는 관자놀이 부위 (Unilateral, 100%)",
+        "KQ_Duration_Length": "15분에서 180분 (3시간) 지속",
+        "KQ_Duration_Frequency": "하루에 여러 번 발생, 수일에서 수개월 지속 후 수년 간 증상이 소실되기도 함",
+        "KQ_Character_Description": "송곳으로 찌르는 듯한, 찢어지는 듯한 통증 (Boring piercing)",
+        "KQ_Character_Severity": "극심한 통증 (Severe)",
+        "KQ_AssociatedSx_Cluster": "동측 눈물, 콧물, 코막힘, 땀, 얼굴 부종, 결막 충혈, 눈꺼풀 처짐 (Ptosis)",
+        "KQ_Factor_Aggravating": "알코올 섭취",
+        "PE_Eyes_ConjunctivaPtosis": "동측 결막 충혈, 눈꺼풀 처짐",
+        "PE_HeadNeck_InspectionPalpation": "동측 얼굴 부종, 땀 분비"
+      },
+      "diagnostic_plan": [
+        "기본 검사 (다른 질환 감별을 위해 필요 시 시행)"
+      ]
+    },
+    {
+      "diagnosis_name": "삼차 신경통 (Trigeminal Neuralgia)",
+      "fact_sheet": {
+        "KQ_Demographics_Age": "50대 이후 중년 여성에게 호발",
+        "KQ_Onset_SuddenVsGradual": "발작적으로 갑자기 시작",
+        "KQ_Location_Area": "주로 한쪽 삼차신경 영역 (Unilateral)",
+        "KQ_Duration_Length": "1~2초에서 수분 (2분 이내) 동안 지속되는 짧은 통증",
+        "KQ_Duration_Frequency": "하루에 여러 번 발생",
+        "KQ_Character_Description": "칼로 찌르는 듯한, 전기 충격 같은, 타는 듯한 통증 (Stabbing electric shock-like)",
+        "KQ_Character_Severity": "극심한 통증 (Severe)",
+        "KQ_Factor_Aggravating": "세수, 양치, 식사, 찬바람, 말하거나 건드리는 행위 등으로 통증 유발",
+        "KQ_Factor_Alleviating": "특정 유발점 피하기",
+        "PE_CranialNerves": "삼차신경 영역 자극 시 통증 유발점 확인"
+      },
+      "diagnostic_plan": [
+        "뇌 MRI (신경 압박 등 이차적 원인 감별을 위해)"
+      ]
+    },
+    {
+      "diagnosis_name": "지주막하 출혈 (Subarachnoid Hemorrhage - SAH)",
+      "fact_sheet": {
+        "KQ_Onset_When": "난생 처음 겪는 듯한 갑작스러운 극심한 두통 (Thunderclap headache)",
+        "KQ_Onset_SuddenVsGradual": "갑작스러운 시작",
+        "KQ_Character_Severity": "극심한 통증",
+        "KQ_AssociatedSx_LOC_Weakness_Dysarthria": "의식 변화, 국소 신경학적 이상 동반 가능",
+        "KQ_PastHistory_Diagnoses": "고혈압, 당뇨, 뇌동맥류 기왕력",
+        "PE_Neck_MeningealSigns": "수막 자극 징후 (경부 강직) 동반"
+      },
+      "diagnostic_plan": [
+        "응급 뇌 CT",
+        "뇌척수액 검사 (CSF analysis)",
+        "뇌혈관 조영술 (Coiling, Clipping 위한 원인 병변 확인)"
+      ]
+    },
+    {
+      "diagnosis_name": "뇌출혈 (Intracerebral Hemorrhage - ICH)",
+      "fact_sheet": {
+        "KQ_Onset_When": "갑작스러운 두통",
+        "KQ_Onset_SuddenVsGradual": "갑작스러운 시작",
+        "KQ_AssociatedSx_LOC_Weakness_Dysarthria": "국소 신경학적 이상 (편마비, 시야 이상, 언어 장애), 의식 장애 동반",
+        "KQ_PastHistory_Diagnoses": "고혈압, 당뇨 기왕력"
+      },
+      "diagnostic_plan": [
+        "응급 뇌 CT/MRI",
+        "뇌혈관 조영술"
+      ]
+    },
+    {
+      "diagnosis_name": "뇌종양 (Brain Tumor)",
+      "fact_sheet": {
+        "KQ_Course_Progression": "점점 심해지는 두통",
+        "KQ_AssociatedSx_LOC_Weakness_Dysarthria": "국소 신경학적 이상 (마비, 실조증, 시야 변화), 간질 발작 (경련)",
+        "KQ_AssociatedSx_WeightLoss_Seizure": "경련, 체중 감소",
+        "PE_Funduscopy": "유두부종 (papilledema)"
+      },
+      "diagnostic_plan": [
+        "뇌 CT",
+        "뇌 MRI"
+      ]
+    },
+    {
+      "diagnosis_name": "뇌수막염 (Meningitis)",
+      "fact_sheet": {
+        "KQ_Onset_When": "발열과 함께 급성으로 시작된 두통",
+        "KQ_AssociatedSx_Infection": "발열, 오한 동반",
+        "PE_Neck_MeningealSigns": "수막 자극 징후 (경부 강직) 동반"
+      },
+      "diagnostic_plan": [
+        "뇌 CT (뇌압 상승 확인)",
+        "뇌척수액 검사 (CSF Tapping)",
+        "혈액 배양 검사"
+      ]
+    },
+    {
+      "diagnosis_name": "측두동맥염 (Temporal Arteritis)",
+      "fact_sheet": {
+        "KQ_Demographics_Age": "고령 여성에게 호발",
+        "KQ_Location_Area": "관자놀이 부위 통증, 측두동맥 압통",
+        "KQ_AssociatedSx_JawClaudication": "저작 시 턱관절 통증 (Jaw Claudication)",
+        "KQ_AssociatedSx_TemporalArteritisSx": "전신 증상 (발열, 피로, 체중 감소, 근육통) 동반",
+        "PE_HeadNeck_InspectionPalpation": "측두 동맥 압통 및 동맥이 딱딱하게 만져짐",
+        "PE_Eyes_ConjunctivaPtosis": "시력 저하, 실명 가능성"
+      },
+      "diagnostic_plan": [
+        "혈액검사 (ESR, CRP 상승)",
+        "측두동맥 초음파",
+        "측두동맥 생검"
+      ]
+    },
+    {
+      "diagnosis_name": "약물 오용 두통 (Drug Overuse Headache)",
+      "fact_sheet": {
+        "KQ_Experience_Medication": "만성적으로 진통제를 과다 복용하고 있음",
+        "KQ_Course_Progression": "두통이 지속적으로 악화되거나 만성화됨",
+        "KQ_PastHistory_Diagnoses": "편두통 등 1차성 두통 기왕력"
+      },
+      "diagnostic_plan": [
+        "기본 검사 (다른 원인 배제)",
+        "약물 복용력 상세 확인"
+      ]
+    },
+    {
+      "diagnosis_name": "외상성 두통 (Post-traumatic Headache)",
+      "fact_sheet": {
+        "KQ_Trauma_HeadInjury": "머리를 다친 후 두통이 발생",
+        "KQ_Trauma_HeadSurgery": "머리 수술을 받은 적이 있음"
+      },
+      "diagnostic_plan": [
+        "Brain CT/MRI (두부 손상 관련 합병증 확인)"
+      ]
+    },
+    {
+      "diagnosis_name": "크롬친화세포종 (Pheochromocytoma)",
+      "fact_sheet": {
+        "KQ_AssociatedSx_Pheochromocytoma": "심한 고혈압과 함께 두근거림, 땀, 식은땀, 불안, 두통 등이 동반됨",
+        "KQ_PastHistory_Diagnoses": "고혈압 진단"
+      },
+      "diagnostic_plan": [
+        "24시간 소변 메타네프린 검사",
+        "복부 CT"
+      ]
+    }
+  ]
+}

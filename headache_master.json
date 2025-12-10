@@ -1,0 +1,588 @@
+{
+  "topic": "두통",
+  "checklist": [
+    {
+      "id": "KQ_Demographics_Age",
+      "category": "History",
+      "sub_category": null,
+      "standard_text": "나이가 어떻게 되세요?",
+      "variations": [
+        "연세가 어떻게 되십니까?",
+        "몇 살이세요?"
+      ],
+      "is_red_flag": true
+    },
+    {
+      "id": "KQ_Onset_When",
+      "category": "History",
+      "sub_category": "Onset",
+      "standard_text": "언제부터 머리가 아팠나요?",
+      "variations": [
+        "통증 시작 시점이 언제죠?",
+        "아픈 지 얼마나 되셨습니까?"
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "KQ_Onset_SuddenVsGradual",
+      "category": "History",
+      "sub_category": "Onset",
+      "standard_text": "갑자기 혹은 서서히 아프기 시작했나요?",
+      "variations": [
+        "갑자기 아팠나요, 아니면 천천히 시작되었나요?",
+        "두통이 갑자기 찾아왔나요, 서서히 심해졌나요?"
+      ],
+      "is_red_flag": true
+    },
+    {
+      "id": "KQ_Onset_Circumstance",
+      "category": "History",
+      "sub_category": "Onset",
+      "standard_text": "주로 어떤 상황에서 머리가 아픈가요?",
+      "variations": [
+        "어떤 상황에서 주로 두통이 오나요?",
+        "특별히 머리 아플 때의 상황이 있나요?"
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "KQ_Location_Area",
+      "category": "History",
+      "sub_category": "Location",
+      "standard_text": "머리의 어느 부분이 아프세요? (국소적? 전체적?)",
+      "variations": [
+        "어디가 주로 아픈가요?",
+        "두통 부위를 손으로 가리켜 주시겠어요?"
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "KQ_Location_Radiation",
+      "category": "History",
+      "sub_category": "Location",
+      "standard_text": "다른 부위로 통증이 퍼지나요? (예: 목까지 뻗치는지)",
+      "variations": [
+        "통증이 목이나 다른 곳으로도 퍼지나요?",
+        "두통이 혹시 다른 데로도 번지나요?"
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "KQ_Duration_Length",
+      "category": "History",
+      "sub_category": "Duration",
+      "standard_text": "한 번 두통이 생기면 얼마나 오래 지속되나요?",
+      "variations": [
+        "두통 한 번 오면 얼마나 가나요?",
+        "머리 아픈 게 얼마나 오래 유지되나요?"
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "KQ_Duration_Frequency",
+      "category": "History",
+      "sub_category": "Duration",
+      "standard_text": "얼마나 자주 머리가 아픈가요?",
+      "variations": [
+        "두통이 얼마나 자주 발생하나요?",
+        "얼마나 자주 머리가 아파서 힘드셨나요?"
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "KQ_Duration_Periodicity",
+      "category": "History",
+      "sub_category": "Duration",
+      "standard_text": "주기적으로 아팠나 안 아팠나 하나요?",
+      "variations": [
+        "두통이 주기적으로 나타나나요?",
+        "규칙적으로 아픈지, 아니면 예측할 수 없이 아픈지 알려주세요."
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "KQ_Duration_TimeOfDay",
+      "category": "History",
+      "sub_category": "Duration",
+      "standard_text": "하루 중 주로 어느 시간에 머리가 아픈가요?",
+      "variations": [
+        "주로 언제 두통이 시작되나요?",
+        "하루 중 언제 머리가 제일 아픈가요?"
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "KQ_Course_Progression",
+      "category": "History",
+      "sub_category": "Course",
+      "standard_text": "통증이 점점 심해지나요? 아니면 일정한가요?",
+      "variations": [
+        "두통이 시간이 갈수록 더 심해지나요?",
+        "통증의 강도가 일정하게 유지되나요, 아니면 점점 악화되나요?"
+      ],
+      "is_red_flag": true
+    },
+    {
+      "id": "KQ_Experience_Previous",
+      "category": "History",
+      "sub_category": "Experience",
+      "standard_text": "이전에 이런 두통을 겪은 적이 있었나요?",
+      "variations": [
+        "예전에도 이런 머리 아픔이 있었나요?",
+        "이번이 처음이세요, 아니면 전에 비슷한 경험이 있으세요?"
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "KQ_Experience_Medication",
+      "category": "History",
+      "sub_category": "Experience",
+      "standard_text": "진통제를 드셔 보셨나요? (언제부터, 얼마나 자주, 한 번에 몇 알 드셨나요?)",
+      "variations": [
+        "진통제 복용 경험이 있으신가요?",
+        "머리 아플 때 약 드셔보셨나요?"
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "KQ_Experience_MedicationEffect",
+      "category": "History",
+      "sub_category": "Experience",
+      "standard_text": "진통제 복용 후 효과가 있었나요?",
+      "variations": [
+        "약 먹으면 좀 나아지던가요?",
+        "진통제가 두통 완화에 도움이 되었나요?"
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "KQ_Character_Description",
+      "category": "History",
+      "sub_category": "Character",
+      "standard_text": "두통의 양상이 어떤지 자세히 표현해 주시겠어요? (예: 욱신거림, 찌릿함 등)",
+      "variations": [
+        "어떻게 아픈지 설명해 주실 수 있나요?",
+        "통증의 느낌이 어떤가요? 찌릿한가요, 욱신거리는가요?"
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "KQ_Character_Severity",
+      "category": "History",
+      "sub_category": "Character",
+      "standard_text": "통증이 어느 정도인가요? (0점은 통증 없음, 10점은 가장 심한 통증)",
+      "variations": [
+        "통증의 강도가 어느 정도 되나요?",
+        "지금 아픈 정도가 몇 점쯤 될까요?"
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "KQ_Character_ImpactOnLife",
+      "category": "History",
+      "sub_category": "Character",
+      "standard_text": "두통 때문에 일상생활에 지장이 있으셨나요?",
+      "variations": [
+        "두통 때문에 평소 생활에 어려움이 있나요?",
+        "머리 아파서 하던 일을 못 하거나 쉬어야 했나요?"
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "KQ_AssociatedSx_Aura",
+      "category": "History",
+      "sub_category": "Associated Sx",
+      "standard_text": "머리가 아프기 전에 특별한 전조증상(눈 앞이 번쩍이거나 잘 안 보임 등)이 있었나요?",
+      "variations": [
+        "두통이 오기 전에 뭔가 다른 증상이 먼저 나타났나요?",
+        "머리 아프기 전에 시야에 이상이 있거나 어지러웠나요?"
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "KQ_AssociatedSx_Cluster",
+      "category": "History",
+      "sub_category": "Associated Sx",
+      "standard_text": "두통과 함께 눈물, 콧물, 눈 충혈 등이 동반되나요?",
+      "variations": [
+        "머리 아플 때 눈에서 눈물이 나거나 코가 막히는 증상이 있나요?",
+        "두통이 오면 눈이 빨개지거나 콧물이 흐르나요?"
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "KQ_AssociatedSx_Trigeminal",
+      "category": "History",
+      "sub_category": "Associated Sx",
+      "standard_text": "두통과 함께 얼굴에도 통증이 있나요?",
+      "variations": [
+        "머리 아픈 것 외에 얼굴 쪽도 아프신가요?",
+        "얼굴에 전기 오듯이 찌릿한 통증이 있나요?"
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "KQ_AssociatedSx_LOC_Weakness_Dysarthria",
+      "category": "History",
+      "sub_category": "Associated Sx",
+      "standard_text": "두통과 함께 의식을 잃거나, 팔다리에 힘이 빠지거나, 말이 어눌해지는 증상이 있었나요?",
+      "variations": [
+        "두통 외에 정신을 잃거나, 팔다리 마비, 말 어눌함 같은 증상이 있었나요?",
+        "의식을 잃거나 몸에 마비 증상, 언어 장애가 있었나요?"
+      ],
+      "is_red_flag": true
+    },
+    {
+      "id": "KQ_AssociatedSx_WeightLoss_Seizure",
+      "category": "History",
+      "sub_category": "Associated Sx",
+      "standard_text": "최근 체중 감소가 있었거나 경련을 한 적이 있나요?",
+      "variations": [
+        "두통이 생기면서 체중이 많이 줄었거나, 경련을 경험했나요?",
+        "몸무게가 줄었거나, 경기한 적은 없으신가요?"
+      ],
+      "is_red_flag": true
+    },
+    {
+      "id": "KQ_AssociatedSx_Infection",
+      "category": "History",
+      "sub_category": "Associated Sx",
+      "standard_text": "최근 발열, 오한, 설사 등 감기 증상이 있었나요?",
+      "variations": [
+        "열나거나 춥고 떨리는 증상, 설사가 있었나요?",
+        "최근에 감기에 걸리거나 몸살 기운이 있었나요?"
+      ],
+      "is_red_flag": true
+    },
+    {
+      "id": "KQ_AssociatedSx_Pheochromocytoma",
+      "category": "History",
+      "sub_category": "Associated Sx",
+      "standard_text": "두통과 함께 심장이 두근거리거나 식은땀이 나는 증상이 있었나요?",
+      "variations": [
+        "머리 아플 때 가슴이 두근거리거나 땀이 많이 나나요?",
+        "갑자기 심장이 빨리 뛰거나 식은땀이 나던 적이 있나요?"
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "KQ_AssociatedSx_JawClaudication",
+      "category": "History",
+      "sub_category": "Associated Sx",
+      "standard_text": "식사 시 턱관절 통증이 있거나 턱이 불편하신가요?",
+      "variations": [
+        "밥 먹을 때 턱이 아프거나 불편한가요?",
+        "음식을 씹을 때 턱에 통증이 오나요?"
+      ],
+      "is_red_flag": true
+    },
+    {
+      "id": "KQ_AssociatedSx_TemporalArteritisSx",
+      "category": "History",
+      "sub_category": "Associated Sx",
+      "standard_text": "관자놀이 부근에 통증이 있거나, 발열, 근육통 같은 전신 증상이 동반되나요?",
+      "variations": [
+        "관자놀이 쪽이 아프거나, 열이 나고 온몸이 쑤시는 증상이 있나요?",
+        "머리 옆쪽이 아프면서 몸살 기운이 동반되나요?"
+      ],
+      "is_red_flag": true
+    },
+    {
+      "id": "KQ_Factor_Aggravating",
+      "category": "History",
+      "sub_category": "Factor",
+      "standard_text": "두통을 악화시키는 상황이 있나요? (예: 빛, 소리, 자세 변화, 스트레스 등)",
+      "variations": [
+        "어떤 상황에서 머리가 더 아파지나요?",
+        "무엇 때문에 두통이 더 심해지는 것 같나요?"
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "KQ_Factor_Alleviating",
+      "category": "History",
+      "sub_category": "Factor",
+      "standard_text": "어떻게 하면 통증이 나아지나요? (예: 수면)",
+      "variations": [
+        "어떻게 하면 두통이 좀 괜찮아지나요?",
+        "두통 완화에 도움이 되는 행동이나 상황이 있나요?"
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "KQ_Event_PreviousCheckup",
+      "category": "History",
+      "sub_category": "Event",
+      "standard_text": "이전 건강 검진에서 특별한 이상 소견은 없었나요?",
+      "variations": [
+        "전에 건강 검진 받으셨을 때 문제된 건 없었나요?",
+        "정기 검진 결과는 괜찮았나요?"
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "KQ_Trauma_HeadInjury",
+      "category": "History",
+      "sub_category": "외상",
+      "standard_text": "최근에 머리를 다친 적이 있나요?",
+      "variations": [
+        "머리를 부딪히거나 다친 적 있으세요?",
+        "외상 후에 두통이 시작되었나요?"
+      ],
+      "is_red_flag": true
+    },
+    {
+      "id": "KQ_Trauma_HeadSurgery",
+      "category": "History",
+      "sub_category": "외상",
+      "standard_text": "머리 수술을 받은 적이 있으신가요?",
+      "variations": [
+        "뇌 수술을 받은 적이 있으세요?",
+        "머리에 수술 경험이 있으신가요?"
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "KQ_PastHistory_Diagnoses",
+      "category": "History",
+      "sub_category": "과거력",
+      "standard_text": "이전에 진단받은 병이 있으신가요? (예: 고혈압, 당뇨, 뇌졸중, 암 등)",
+      "variations": [
+        "기존에 앓고 있는 질환이 있으신가요?",
+        "다른 병으로 치료받으신 적이 있으세요?"
+      ],
+      "is_red_flag": true
+    },
+    {
+      "id": "KQ_Medication_Current",
+      "category": "History",
+      "sub_category": "약물 투약",
+      "standard_text": "현재 복용하시는 약물이 있으신가요?",
+      "variations": [
+        "지금 드시고 있는 약이 있으세요?",
+        "현재 복용 중인 약물이 있나요?"
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "KQ_SocialHistory_SubstanceUse",
+      "category": "History",
+      "sub_category": "사회력",
+      "standard_text": "술, 담배, 커피는 하시나요?",
+      "variations": [
+        "술이나 담배는 얼마나 하세요?",
+        "커피는 자주 드시는 편이신가요?"
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "KQ_SocialHistory_OccupationStress",
+      "category": "History",
+      "sub_category": "사회력",
+      "standard_text": "직업은 어떻게 되시고, 직장 스트레스는 어떠신가요?",
+      "variations": [
+        "어떤 일을 하시나요? 혹시 스트레스가 많으신가요?",
+        "직업과 관련하여 스트레스 받는 부분이 있으세요?"
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "KQ_FamilyHistory_Headache",
+      "category": "History",
+      "sub_category": "가족력",
+      "standard_text": "가족 중에 비슷한 두통을 앓으시는 분이 있으신가요?",
+      "variations": [
+        "가족 중에 편두통이 있는 분이 있나요?",
+        "집안에 두통으로 고생하는 사람이 있나요?"
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "KQ_FamilyHistory_VascularDisease",
+      "category": "History",
+      "sub_category": "가족력",
+      "standard_text": "가족 중 고혈압이나 뇌혈관 질환을 가진 분이 계신가요?",
+      "variations": [
+        "가족 중에 고혈압이나 뇌졸중 같은 병력이 있나요?",
+        "집안에 뇌혈관 관련 질환을 가진 분이 있나요?"
+      ],
+      "is_red_flag": true
+    },
+    {
+      "id": "KQ_GynecologicalHistory_MenstrualCycle",
+      "category": "History",
+      "sub_category": "여성력",
+      "standard_text": "월경 주기에 따라 두통이 생겼다 없어졌다 하지는 않나요?",
+      "variations": [
+        "생리 주기에 맞춰서 두통이 오거나 사라지나요?",
+        "월경과 두통의 관련성이 있나요?"
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "PE_HeadNeck_InspectionPalpation",
+      "category": "Physical Examination",
+      "sub_category": null,
+      "standard_text": "두경부 시진, 촉진 및 압통점 확인 (머리, 얼굴, 턱관절 확인)",
+      "variations": [
+        "머리와 얼굴, 턱관절을 확인하겠습니다.",
+        "머리부터 목까지 만져보고 살펴보겠습니다."
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "PE_HeadNeck_JawMovement",
+      "category": "Physical Examination",
+      "sub_category": null,
+      "standard_text": "입을 벌려 자동턱 운동을 촉진합니다.",
+      "variations": [
+        "입을 벌렸다 닫았다 해보시겠어요?",
+        "턱관절 움직임을 확인하겠습니다."
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "PE_Eyes_ConjunctivaPtosis",
+      "category": "Physical Examination",
+      "sub_category": null,
+      "standard_text": "결막(충혈, 눈물) 및 안검하수를 확인합니다.",
+      "variations": [
+        "눈의 충혈이나 눈물, 눈꺼풀 처짐을 확인하겠습니다.",
+        "눈 상태를 살펴보겠습니다."
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "PE_CranialNerves",
+      "category": "Physical Examination",
+      "sub_category": null,
+      "standard_text": "동공 반사, 안구 운동, 얼굴 감각 및 운동 등 뇌신경을 검사합니다.",
+      "variations": [
+        "눈동자 반응, 눈 움직임, 얼굴 감각과 운동을 확인하겠습니다.",
+        "뇌신경 기능을 검사하겠습니다."
+      ],
+      "is_red_flag": true
+    },
+    {
+      "id": "PE_Cerebellar_FingerToNose",
+      "category": "Physical Examination",
+      "sub_category": null,
+      "standard_text": "소뇌기능 검사(Finger to nose)를 실시합니다.",
+      "variations": [
+        "손가락으로 코를 짚는 검사를 해보겠습니다.",
+        "손가락-코 검사를 하겠습니다."
+      ],
+      "is_red_flag": true
+    },
+    {
+      "id": "PE_Cerebellar_RombergTandem",
+      "category": "Physical Examination",
+      "sub_category": null,
+      "standard_text": "롬베르그 검사 및 탠덤 보행 검사를 실시합니다.",
+      "variations": [
+        "똑바로 서서 눈을 감아보세요. 그리고 일직선으로 걸어보세요.",
+        "균형 감각과 걷는 모습을 확인하겠습니다."
+      ],
+      "is_red_flag": true
+    },
+    {
+      "id": "PE_Cerebellar_TandemGaitSpecific",
+      "category": "Physical Examination",
+      "sub_category": null,
+      "standard_text": "한 발씩 앞에 다른 발 뒤꿈치가 오도록 걸어보세요.",
+      "variations": [
+        "일직선으로 걷는 것을 보여주시겠어요?",
+        "발 뒤꿈치를 앞 발가락에 붙이면서 걸어보세요."
+      ],
+      "is_red_flag": true
+    },
+    {
+      "id": "PE_Extremities_SensoryMotorDTR",
+      "category": "Physical Examination",
+      "sub_category": null,
+      "standard_text": "팔다리의 감각, 운동 및 심부건반사(DTR)를 확인합니다.",
+      "variations": [
+        "팔다리의 감각, 힘, 반사를 확인하겠습니다.",
+        "손발의 감각과 움직임을 살펴보겠습니다."
+      ],
+      "is_red_flag": true
+    },
+    {
+      "id": "PE_Neck_MeningealSigns",
+      "category": "Physical Examination",
+      "sub_category": null,
+      "standard_text": "수막 자극 징후를 확인합니다.",
+      "variations": [
+        "목의 뻣뻣함이나 통증이 있는지 확인하겠습니다.",
+        "수막 자극 징후가 있는지 살펴보겠습니다."
+      ],
+      "is_red_flag": true
+    },
+    {
+      "id": "PE_Funduscopy",
+      "category": "Physical Examination",
+      "sub_category": null,
+      "standard_text": "안저검사를 실시합니다.",
+      "variations": [
+        "눈 안쪽을 살펴보는 검사를 하겠습니다.",
+        "눈 안쪽 망막 검사를 시작하겠습니다."
+      ],
+      "is_red_flag": true
+    },
+    {
+      "id": "PED_Empathy",
+      "category": "Patient Education",
+      "sub_category": null,
+      "standard_text": "일상생활에 지장이 있을 정도로 두통이 있으셔서 많이 힘드셨을 것 같습니다.",
+      "variations": [
+        "두통 때문에 많이 힘드셨죠?",
+        "일상생활에 불편함이 많으셨겠어요."
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "PED_ImpressionDiagnosis",
+      "category": "Patient Education",
+      "sub_category": null,
+      "standard_text": "지금까지의 문진과 신체 검진 소견을 보았을 때 현재 편두통이 가장 의심됩니다.",
+      "variations": [
+        "현재로서는 편두통일 가능성이 높습니다.",
+        "검사 결과와 증상을 종합해볼 때 편두통이 의심됩니다."
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "PED_ExplanationTreatment",
+      "category": "Patient Education",
+      "sub_category": null,
+      "standard_text": "이런 경우에는 다행히 위험한 원인이 있는 것이 아니라 약물로 조절할 수 있는 두통이기 때문에 너무 걱정하지 않으셔도 됩니다.",
+      "variations": [
+        "큰 문제는 아니고 약물 치료로 조절 가능하니 안심하세요.",
+        "걱정하실 만한 위험한 상황은 아닙니다."
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "PED_LifestyleAdvice",
+      "category": "Patient Education",
+      "sub_category": null,
+      "standard_text": "평소 이완요법, 명상, 규칙적인 수면과 식사, 금주 등 생활 습관 개선이 두통 완화에 도움이 됩니다.",
+      "variations": [
+        "스트레스 관리와 규칙적인 생활 습관이 중요합니다.",
+        "숙면, 건강한 식습관, 금주 등의 노력이 필요합니다."
+      ],
+      "is_red_flag": false
+    },
+    {
+      "id": "KQ_Closing_Questions",
+      "category": "Closing",
+      "sub_category": null,
+      "standard_text": "마지막으로 혹시 궁금한 점이 있으신가요?",
+      "variations": [
+        "혹시 더 궁금한 점 있으세요?",
+        "따로 질문하실 사항이 있으신가요?"
+      ],
+      "is_red_flag": false
+    }
+  ]
+}
