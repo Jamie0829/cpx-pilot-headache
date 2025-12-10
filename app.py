@@ -3,6 +3,13 @@ import random
 import time
 import cpx_engine
 
+import os
+import streamlit as st
+
+# [디버깅용] 서버가 보고 있는 폴더와 파일 목록을 화면에 찍어봅니다.
+st.write(f"📂 현재 작업 폴더: `{os.getcwd()}`")
+st.write(f"📄 폴더 내 파일들: `{os.listdir('.')}`")
+
 # 페이지 설정
 st.set_page_config(page_title="CPX Simulator", page_icon="🏥", layout="wide")
 
@@ -182,4 +189,5 @@ elif st.session_state.mode == "result":
     if st.button("새로운 시뮬레이션 시작하기 (초기 화면)"):
         st.session_state.mode = "setup"
         del st.session_state.patient
+
         st.rerun()
