@@ -18,18 +18,22 @@ id_to_text_map = {}
 client = None
 
 # =========================================================
-# 1. 초기화 함수 (데이터 로드)
+# 1. 초기화 함수 (데이터 로드) - 경로 문제 해결 버전
 # =========================================================
 def initialize_data():
     global embedder, index, id_map, scenarios, id_to_text_map, client
     
     print("⏳ 데이터 로딩 및 초기화 중...")
-    
+
+    # [핵심 수정] 현재 실행 중인 파일(cpx_engine.py)의 절대 경로를 기준점으로 잡습니다.
+    # 이렇게 하면 서버의 현재 작업 폴더가 어디든 상관없이 항상 올바른 위치를 찾습니다.
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
     # 1. API 키 로드
     load_dotenv()
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
-        print("❌ .env 파일에서 OPENAI_API_KEY를 찾을 수 없습니다.")
+        print("❌ .env 파일 또는 Secrets에서 OPENAI_API_KEY를 찾을 수 없습니다.")
         return False
         
     client = OpenAI(api_key=api_key)
@@ -43,38 +47,47 @@ def initialize_data():
     
     # 3. 데이터 파일 로드
     try:
+        # [수정] 절대 경로 생성
+        faiss_path = os.path.join(BASE_DIR, 'headache.faiss')
+        meta_path = os.path.join(BASE_DIR, 'headache_meta.json')
+        scenarios_path = os.path.join(BASE_DIR, 'headache_scenarios.json')
+        master_path = os.path.join(BASE_DIR, 'headache_master.json')
+
         # FAISS 인덱스 로드
-        if os.path.exists('headache.faiss'):
-            index = faiss.read_index('headache.faiss')
+        if os.path.exists(faiss_path):
+            index = faiss.read_index(faiss_path)
         else:
-            print("❌ 'headache.faiss' 파일이 없습니다.")
+            print(f"❌ 파일 없음: {faiss_path}")
             return False
 
         # 메타 데이터 로드
-        if os.path.exists('headache_meta.json'):
-            with open('headache_meta.json', 'r', encoding='utf-8') as f:
+        if os.path.exists(meta_path):
+            with open(meta_path, 'r', encoding='utf-8') as f:
                 id_map = json.load(f)
         else:
-            print("❌ 'headache_meta.json' 파일이 없습니다.")
+            print(f"❌ 파일 없음: {meta_path}")
             return False
 
         # 시나리오 데이터 로드
-        if os.path.exists('headache_scenarios.json'):
-            with open('headache_scenarios.json', 'r', encoding='utf-8') as f:
+        if os.path.exists(scenarios_path):
+            with open(scenarios_path, 'r', encoding='utf-8') as f:
                 data = json.load(f)
                 scenarios = data.get('scenarios', [])
         else:
-            print("❌ 'headache_scenarios.json' 파일이 없습니다.")
+            print(f"❌ 파일 없음: {scenarios_path}")
             return False
             
         # 마스터 데이터 로드 (Re-ranking용)
-        if os.path.exists('headache_master.json'):
-            with open('headache_master.json', 'r', encoding='utf-8') as f:
+        if os.path.exists(master_path):
+            with open(master_path, 'r', encoding='utf-8') as f:
                 master_data = json.load(f)
+            # id_to_text_map이 전역 변수로 선언되어 있다고 가정하고 업데이트
+            if 'id_to_text_map' not in globals():
+                id_to_text_map = {} 
             for item in master_data.get('checklist', []):
                 id_to_text_map[item['id']] = item['standard_text']
         else:
-            print("⚠️ 'headache_master.json' 파일이 없습니다. (질문 매칭 정확도 하락 가능)")
+            print(f"⚠️ 파일 없음: {master_path} (질문 매칭 정확도 하락 가능)")
             
         print("✅ 모든 데이터 로드 완료")
         return True
@@ -277,4 +290,5 @@ def evaluate_assessment(patient, user_answers, chat_history):
     """
     
     # 긴 리포트를 위해 토큰 제한 늘림
+
     return generate_gpt(prompt, max_tokens=3000)
