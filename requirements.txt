@@ -3,3 +3,4 @@ streamlit
 numpy
 faiss-cpu
 sentence-transformers
+python-dotenv
