@@ -1,6 +1,7 @@
 openai
 streamlit
 numpy
-faiss-cpu
+faiss-cpu==1.13.1
 sentence-transformers
 python-dotenv
+
